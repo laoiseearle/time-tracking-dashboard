@@ -53,6 +53,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 2em 1.5em;
+  cursor: pointer;
+}
+.card-info:hover {
+  background-color: #2b3072;
 }
 
 .card-title {
@@ -63,6 +67,9 @@ body {
 .card-title img {
   height: 5px;
   cursor: pointer;
+}
+.card-title img:hover {
+  filter: brightness(10);
 }
 
 .card-title,
@@ -136,6 +143,10 @@ body {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+}
+
+.timeframe label:hover {
+  color: #9599c4;
 }
 
 .timeframe input:checked + label {
