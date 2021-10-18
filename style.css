@@ -5,6 +5,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: 'Rubik', sans-serif;
   background-color: #0f1424;
   color: white;
@@ -15,7 +17,10 @@ body {
 
 .wrapper {
   width: 90vw;
-  padding: 4em 0;
+  padding: 4em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ---- Cards ---- */
@@ -25,6 +30,7 @@ body {
   border-radius: 1em;
   margin: 1.55em 0;
   width: 100%;
+  max-width: 500px;
   height: 160px;
 }
 
@@ -154,4 +160,83 @@ body {
 }
 .self-care {
   background-color: #f1c65b;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    justify-content: center;
+  }
+
+  /* Reset */
+  .user-text,
+  .user-details,
+  .card,
+  .wrapper,
+  .card-info {
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    height: 400px;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5em;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    height: 100%;
+  }
+
+  .card-info {
+    height: 80%;
+    padding: 0.8em 1.5em;
+    justify-content: space-evenly;
+  }
+
+  .card-report {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-report p {
+    font-size: 0.8em;
+    padding-top: 0.6em;
+  }
+
+  /* ---- User Card ---- */
+  .user {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+  }
+
+  .user-details,
+  .timeframe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-details {
+    height: 70%;
+    justify-content: space-evenly;
+    padding: 0em 2em 2em 1.5em;
+  }
+
+  .user-text h1 {
+    font-size: 1.7em;
+  }
+
+  .timeframe {
+    padding-left: 1.5em;
+  }
+
+  .timeframe label {
+    font-size: 0.85em;
+    padding-bottom: 0.5em;
+  }
 }
