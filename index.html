@@ -26,9 +26,33 @@
         </div>
 
         <div class="timeframe">
-          <p>Daily</p>
-          <p>Weekly</p>
-          <p>Monthly</p>
+          <input
+            type="radio"
+            name="timeframe"
+            id="daily"
+            value="daily"
+            onclick="renderStats()"
+          />
+          <label for="daily">Daily</label>
+
+          <input
+            type="radio"
+            name="timeframe"
+            id="weekly"
+            value="weekly"
+            onclick="renderStats()"
+            checked
+          />
+          <label for="weekly">Weekly</label>
+
+          <input
+            type="radio"
+            name="timeframe"
+            id="monthly"
+            value="monthly"
+            onclick="renderStats()"
+          />
+          <label for="monthly">Monthly</label>
         </div>
       </div>
 
@@ -42,8 +66,9 @@
             <img src="./images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="card-report">
-            <h1>32hrs</h1>
-            <p>Last Week - 36hrs</p>
+            <!-- Rendered from script -->
+            <h1></h1>
+            <p></p>
           </div>
         </div>
       </div>
@@ -58,8 +83,9 @@
             <img src="./images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="card-report">
-            <h1>32hrs</h1>
-            <p>Last Week - 36hrs</p>
+            <!-- Rendered from script -->
+            <h1></h1>
+            <p></p>
           </div>
         </div>
       </div>
@@ -74,8 +100,9 @@
             <img src="./images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="card-report">
-            <h1>32hrs</h1>
-            <p>Last Week - 36hrs</p>
+            <!-- Rendered from script -->
+            <h1></h1>
+            <p></p>
           </div>
         </div>
       </div>
@@ -90,8 +117,9 @@
             <img src="./images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="card-report">
-            <h1>32hrs</h1>
-            <p>Last Week - 36hrs</p>
+            <!-- Rendered from script -->
+            <h1></h1>
+            <p></p>
           </div>
         </div>
       </div>
@@ -106,8 +134,9 @@
             <img src="./images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="card-report">
-            <h1>32hrs</h1>
-            <p>Last Week - 36hrs</p>
+            <!-- Rendered from script -->
+            <h1></h1>
+            <p></p>
           </div>
         </div>
       </div>
@@ -122,11 +151,15 @@
             <img src="./images/icon-ellipsis.svg" alt="" />
           </div>
           <div class="card-report">
-            <h1>32hrs</h1>
-            <p>Last Week - 36 hrs</p>
+            <!-- Rendered from script -->
+            <h1></h1>
+            <p></p>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
