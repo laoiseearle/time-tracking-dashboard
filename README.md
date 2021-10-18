@@ -19,11 +19,13 @@ Users should be able to:
 
 ### Screenshots
 
-- Mobile Design:
+Mobile Design:
+
   <img src = 'https://user-images.githubusercontent.com/19372021/137748573-806eb1d0-09ac-438f-bc37-abd7c5b4fe2e.png' width='375' height='1635'>
 
-- Desktop Design:
-  <img src= 'https://user-images.githubusercontent.com/19372021/137748569-4e32850e-fbb0-45e6-864d-477ab5111b06.png'>
+Desktop Design:
+
+  <img src = 'https://user-images.githubusercontent.com/19372021/137748569-4e32850e-fbb0-45e6-864d-477ab5111b06.png'>
 
 ### Links
 
