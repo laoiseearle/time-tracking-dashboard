@@ -42,6 +42,20 @@ body {
   clip-path: inset(10px 0 0 0);
 }
 
+.exercise img {
+  height: 55px;
+  top: 0px;
+  clip-path: inset(0px 0 0 0);
+}
+
+.social img {
+  height: 95px;
+}
+
+.self-care img {
+  height: 60px;
+}
+
 .card-info {
   position: absolute;
   bottom: 0;
@@ -68,6 +82,7 @@ body {
   height: 5px;
   cursor: pointer;
 }
+
 .card-title img:hover {
   filter: brightness(10);
 }
